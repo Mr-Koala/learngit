@@ -1,4 +1,4 @@
-##版本回退
+﻿##版本回退
 git reset --hard commit_id:回退/前进到commit_id指向的版本
 git reset --hard HEAD^:回退到上一版本
 git log:查看提交历史
