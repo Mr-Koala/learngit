@@ -19,3 +19,8 @@ git reflog:查看各个版本的commit_id
 git 管理的是修改，而非文件。
 第一次修改 -> git add -> 第二次修改 -> git commit
 ###撤销修改
+git checkout -- <filename>：丢弃工作区的修改，返回最近一次add/commit时的文件状态
+git reset HEAD <filename>：丢弃暂存区的修改
+###删除文件
+git rm <filename>：从版本库中删除文件
+##远程仓库
