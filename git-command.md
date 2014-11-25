@@ -42,3 +42,13 @@
 ###解决冲突
 + 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 + `git log --graph`:看到分支合并图。
+###分支管理策略
+1. `git merge <name>`:`fast forward`模式合并，删除分支，分支信息被丢弃
+2. `git merge --no-ff`:普通模式合并，合并后历史有分支，可通过`git log --graph`看到分支合并记录
+###Bug分支
++ `git stash`:储存当前工作现场
++ `git stash list`:列出所有stash
++ `git stash apply`:恢复最近一次储存的stash
++ `git stash drop`:删除最近一次储存的stash
++ `git stash pop`:恢复+删除最近一次stash
++ `git stash stash@{num}`:恢复指定stash
