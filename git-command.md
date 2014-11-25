@@ -52,3 +52,5 @@
 + `git stash drop`:删除最近一次储存的stash
 + `git stash pop`:恢复+删除最近一次stash
 + `git stash stash@{num}`:恢复指定stash
+###feature分支
++ `git branch -D <name>`:强行删除没有被合并的分支
