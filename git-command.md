@@ -29,3 +29,16 @@
 3. 推送并关联本地master分支git push -u origin master
 + git push origin master:提交master分支修改到远程库
 ###从远程库克隆
++ git clone git@github.com:<username>/<repository name>.git
++ GitHub支持ssh/https协议
+##分支管理
+###创建和合并分支
++ `git branch <name>`:创建分支
++ `git branch`:查看分支
++ `git checkout <name>`:切换分支
++ `git checkout -b <name>`:创建+切换分支
++ `git merge <name>`:合并某分支到当前分支
++ `git branch -d <name>`:删除分支
+###解决冲突
++ 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
++ `git log --graph`:看到分支合并图。
