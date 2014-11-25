@@ -1,9 +1,9 @@
 ﻿#Git教程 笔记
 > 教程链接：http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 ##创建版本库
-git init:将当前目录变为Git管理的仓库
-git add <filename>：把文件添加到仓库（stage中）
-git commit：把文件按提交到仓库
++ git init:将当前目录变为Git管理的仓库
++ git add <filename>：把文件添加到仓库（stage中）
++ git commit：把文件按提交到仓库
 	-m "版本描述"
 ##时光机穿梭
 git status：显示仓库当前状态
