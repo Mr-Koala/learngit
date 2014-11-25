@@ -24,3 +24,9 @@ git reset HEAD <filename>：丢弃暂存区的修改
 ###删除文件
 git rm <filename>：从版本库中删除文件
 ##远程仓库
+###添加远程库
+1.登陆GitHub，“Create a new repository”
+2.添加远程库：git remote add origin git@github.com:<username>/<repository name>.git
+3.推送并关联本地master分支git push -u origin master
+git push origin master:提交master分支修改到远程库
+###从远程库克隆
