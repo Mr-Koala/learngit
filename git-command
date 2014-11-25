@@ -8,10 +8,14 @@ git commit：把文件按提交到仓库
 ##时光机穿梭
 git status：显示仓库当前状态
 git diff <filename>：展示文件详细修改内容
-##版本回退
+###版本回退
 git log：显示从最近到最远的提交日志
 	--pretty=oneline：以单行形式显示提交日志
 git reset --hard commit_id:回退/前进到commit_id指向的版本
 git reset --hard HEAD^:回退到上一版本
 git log:查看提交历史
 git reflog:查看各个版本的commit_id
+###管理修改
+git 管理的是修改，而非文件。
+第一次修改 -> git add -> 第二次修改 -> git commit
+###撤销修改
