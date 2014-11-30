@@ -6,6 +6,7 @@
 + git add <filename>：把文件添加到仓库（stage中）
 + git commit -m "版本描述"：把文件按提交到仓库
 
+---------------------
 ##时光机穿梭
 + git status：显示仓库当前状态
 + git diff <filename>：展示文件详细修改内容
@@ -27,7 +28,8 @@
 
 ###删除文件
 + git rm <filename>：从版本库中删除文件
-----------------------------------
+
+--------------------
 ##远程仓库
 
 ###添加远程库
@@ -39,6 +41,7 @@
 ###从远程库克隆
 + git clone git@github.com:<username>/<repository name>.git
 + GitHub支持ssh/https协议
+
 ---------------------
 ##分支管理
 
@@ -68,4 +71,5 @@
 
 ###feature分支
 + `git branch -D <name>`:强行删除没有被合并的分支
+
 ------------------
