@@ -54,3 +54,45 @@
 + `git stash stash@{num}`:恢复指定stash
 ###feature分支
 + `git branch -D <name>`:强行删除没有被合并的分支
+###多人协作
++ `git remote -v`:查看远程库的详细信息
++ `git checkout -b dev origin/dev`:创建远程origin的dev分支到本地
++ `git branch --set-upstream dev origin/dev`:建立本地分支和远程分支的关联
++ `git pull`:抓取远程的新提交
++ `git push origin branch-name`:从本地推送分支
+##标签管理
+1. 是指向某个commit的指针
+2. 标签不能移动
+3. 创建和删除标签都是瞬间完成的
+###创建标签
++ `eg：git tag v1.0`
++ `git tag`:列出所有标签（按字母排序）
++ `git tag <tagname>`:新建一个标签，默认为HEAD，也可以指定一个commit id
++ `git tag -a <tagname> -m "description":指定标签信息
++ `git show <tagname>`:查看标签信息
+###操作标签
++ `git push origin <tagname>`:推送本地标签到远程库
++ `git push origin --tags`:推送全部未推送过的本地标签
++ `git tag -d <tagname>`:删除本地标签
++ `git push origin :refs/tags/<tagname>`:删除远程标签
+##使用GitHub
+##自定义Git
++ `git config --global color.ui true`:让Git显示颜色
+###忽略特殊文件
+1. `.gitignore`:配置要忽略的文件
+2. `https://github.com/github/gitignore`:`.gitignore`文件模板
+###配置别名
++ 别名是命令的缩写
++ 例子：
+	1. `git config --global alias.st status`:配置status别名为st
+	2. `git config --global alias.co checkout`:
+	3. `git config --global alias.ci commit`:
+	4. `git config --global alias.br branch`:
+	5. `git config --global alias.unstage 'reset HEAD'`:
+	6. `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`:
++ 配置文件：
+	1. `.git/config`:仓库的Git配置文件
+	2. `.gitconfig`:当前用户的Git配置文件，放在用户主目录下
+##搭建Git服务器
+
+
